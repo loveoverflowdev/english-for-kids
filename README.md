@@ -11,6 +11,10 @@
 
 ## [Deploy](https://boriskrasko.github.io/efk)
 
+ ### Start Screen 
+ 
+ ![](https://boriskrasko.github.io/efk/pages/efk.png)
+
 ## Stack: 
   * JavaScript(ES6)
   * SCSS, CSS3
@@ -53,6 +57,3 @@
  
  ![](https://boriskrasko.github.io/efk/pages/efk-game.png)
  
- ### Start Screen 
- 
- ![](https://boriskrasko.github.io/efk/pages/efk.png)
