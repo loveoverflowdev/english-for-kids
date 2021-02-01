@@ -16,4 +16,6 @@ English for kids (SPA)
  
  ## Development process: 
  
- ![Page markup](https://boriskrasko.github.io/efk/pages/efk1.png)
+ ### Page markup
+ 
+ ![Page markup](https://boriskrasko.github.io/efk/pages/efk-markup.png)
