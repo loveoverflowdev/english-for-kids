@@ -1,7 +1,15 @@
-# efk
-English for kids (SPA)
+# English for kids
 
-# [English For Kids](https://boriskrasko.github.io/efk)
+[**English for kids**]((https://boriskrasko.github.io/efk)) - an application for learning English words for kids.
+
+## Application Structure:
+1. Main page
+2. Category Page
+3. Statistics Page
+
+## [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rslang/english-for-kids-translated.md)
+
+# [Deploy](https://boriskrasko.github.io/efk)
 
 ## Stack: 
   * JavaScript(ES6)
