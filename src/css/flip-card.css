@@ -37,7 +37,6 @@
 }
 
 .flip-card-back {
-  /* background: linear-gradient(45deg, #56ab2f, #a8e063); */
   background: linear-gradient(45deg, #2193b0, #6dd5ed);
   color: white;
   transform: rotateY(180deg);
@@ -72,7 +71,6 @@
 .flip-button img:hover {
   transform: scale(1.1);
 }
-
 
 .start-btn:hover, .reset:hover {
   background-color: #d45;
