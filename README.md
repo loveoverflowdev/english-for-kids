@@ -14,6 +14,8 @@ English for kids (SPA)
  * CSS Flex 
  * Eslint airbnb
  
- ## Development process: 
+ ## Development process:
+ 
+ ### Page markup
  
  ![](https://boriskrasko.github.io/efk/pages/efk1.png)
