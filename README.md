@@ -9,7 +9,11 @@ English for kids (SPA)
   * HTML5
   * Webpack
   
-# +
+## +
  * Local Storage
  * CSS Flex 
  * Eslint airbnb
+ 
+ ## Development process: 
+ 
+ ![Page markup](https://boriskrasko.github.io/efk/pages/efk1.png)
