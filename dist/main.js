@@ -113,21 +113,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/images/bg.jpg":
-/*!***************************!*\
-  !*** ./src/images/bg.jpg ***!
-  \***************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/bg.jpg\");\n\n//# sourceURL=webpack://webpack-template/./src/images/bg.jpg?");
-
-/***/ }),
-
 /***/ "./src/images/bg_looney.jpg":
 /*!**********************************!*\
   !*** ./src/images/bg_looney.jpg ***!
@@ -650,36 +635,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/giraffe.jpg\");\n\n//# sourceURL=webpack://webpack-template/./src/images/giraffe.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/gradient-waves.jpg":
-/*!***************************************!*\
-  !*** ./src/images/gradient-waves.jpg ***!
-  \***************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/gradient-waves.jpg\");\n\n//# sourceURL=webpack://webpack-template/./src/images/gradient-waves.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/gradient-waves_blur.jpg":
-/*!********************************************!*\
-  !*** ./src/images/gradient-waves_blur.jpg ***!
-  \********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/gradient-waves_blur.jpg\");\n\n//# sourceURL=webpack://webpack-template/./src/images/gradient-waves_blur.jpg?");
 
 /***/ }),
 
@@ -2716,7 +2671,7 @@ eval("\n\n/* eslint-disable */\nfunction normalizeUrl(pathComponents) {\n  retur
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1612205322919\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webpack-template/./src/css/flip-card.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1612207702916\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webpack-template/./src/css/flip-card.css?");
 
 /***/ }),
 
@@ -2730,7 +2685,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1612205322895\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webpack-template/./src/css/menu.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1612207702904\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webpack-template/./src/css/menu.css?");
 
 /***/ }),
 
@@ -2744,7 +2699,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1612205322910\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webpack-template/./src/css/style.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1612207702922\n      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://webpack-template/./src/css/style.css?");
 
 /***/ }),
 
@@ -2814,7 +2769,7 @@ eval("var map = {\n\t\"./angry.mp3\": \"./src/audio/angry.mp3\",\n\t\"./apple.mp
 /*! runtime requirements: module, __webpack_require__.o, __webpack_require__ */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./action.jpg\": \"./src/images/action.jpg\",\n\t\"./angry.jpg\": \"./src/images/angry.jpg\",\n\t\"./angry_.jpg\": \"./src/images/angry_.jpg\",\n\t\"./apple.jpg\": \"./src/images/apple.jpg\",\n\t\"./bg.jpg\": \"./src/images/bg.jpg\",\n\t\"./bg_looney.jpg\": \"./src/images/bg_looney.jpg\",\n\t\"./bg_looney_blur.jpg\": \"./src/images/bg_looney_blur.jpg\",\n\t\"./bird.jpg\": \"./src/images/bird.jpg\",\n\t\"./black.jpg\": \"./src/images/black.jpg\",\n\t\"./blouse.jpg\": \"./src/images/blouse.jpg\",\n\t\"./blue.jpg\": \"./src/images/blue.jpg\",\n\t\"./body.jpg\": \"./src/images/body.jpg\",\n\t\"./boot.jpg\": \"./src/images/boot.jpg\",\n\t\"./bread.jpg\": \"./src/images/bread.jpg\",\n\t\"./cake.jpg\": \"./src/images/cake.jpg\",\n\t\"./candy.jpg\": \"./src/images/candy.jpg\",\n\t\"./cat.jpg\": \"./src/images/cat.jpg\",\n\t\"./cheek.jpg\": \"./src/images/cheek.jpg\",\n\t\"./cheese.jpg\": \"./src/images/cheese.jpg\",\n\t\"./chick.jpg\": \"./src/images/chick.jpg\",\n\t\"./chicken.jpg\": \"./src/images/chicken.jpg\",\n\t\"./clothes.jpg\": \"./src/images/clothes.jpg\",\n\t\"./coat.jpg\": \"./src/images/coat.jpg\",\n\t\"./colors.jpg\": \"./src/images/colors.jpg\",\n\t\"./cry.jpg\": \"./src/images/cry.jpg\",\n\t\"./dance.jpg\": \"./src/images/dance.jpg\",\n\t\"./dive.jpg\": \"./src/images/dive.jpg\",\n\t\"./dog.jpg\": \"./src/images/dog.jpg\",\n\t\"./dolphin.jpg\": \"./src/images/dolphin.jpg\",\n\t\"./draw.jpg\": \"./src/images/draw.jpg\",\n\t\"./dress.jpg\": \"./src/images/dress.jpg\",\n\t\"./eye.jpg\": \"./src/images/eye.jpg\",\n\t\"./favicon.png\": \"./src/images/favicon.png\",\n\t\"./fish.jpg\": \"./src/images/fish.jpg\",\n\t\"./fish2.jpg\": \"./src/images/fish2.jpg\",\n\t\"./fly.jpg\": \"./src/images/fly.jpg\",\n\t\"./food.jpg\": \"./src/images/food.jpg\",\n\t\"./foot.jpg\": \"./src/images/foot.jpg\",\n\t\"./frog.jpg\": \"./src/images/frog.jpg\",\n\t\"./giraffe.jpg\": \"./src/images/giraffe.jpg\",\n\t\"./gradient-waves.jpg\": \"./src/images/gradient-waves.jpg\",\n\t\"./gradient-waves_blur.jpg\": \"./src/images/gradient-waves_blur.jpg\",\n\t\"./gray.jpg\": \"./src/images/gray.jpg\",\n\t\"./green.jpg\": \"./src/images/green.jpg\",\n\t\"./hair.jpg\": \"./src/images/hair.jpg\",\n\t\"./hand.jpg\": \"./src/images/hand.jpg\",\n\t\"./happy.jpg\": \"./src/images/happy.jpg\",\n\t\"./horse.jpg\": \"./src/images/horse.jpg\",\n\t\"./hug.jpg\": \"./src/images/hug.jpg\",\n\t\"./juice.jpg\": \"./src/images/juice.jpg\",\n\t\"./jump.jpg\": \"./src/images/jump.jpg\",\n\t\"./laugh.jpg\": \"./src/images/laugh.jpg\",\n\t\"./laugh_.jpg\": \"./src/images/laugh_.jpg\",\n\t\"./lion.jpg\": \"./src/images/lion.jpg\",\n\t\"./lips.jpg\": \"./src/images/lips.jpg\",\n\t\"./lose.png\": \"./src/images/lose.png\",\n\t\"./mood.jpg\": \"./src/images/mood.jpg\",\n\t\"./mouse.jpg\": \"./src/images/mouse.jpg\",\n\t\"./nose.jpg\": \"./src/images/nose.jpg\",\n\t\"./open.jpg\": \"./src/images/open.jpg\",\n\t\"./orange.jpg\": \"./src/images/orange.jpg\",\n\t\"./pants.jpg\": \"./src/images/pants.jpg\",\n\t\"./pets.jpg\": \"./src/images/pets.jpg\",\n\t\"./pig.jpg\": \"./src/images/pig.jpg\",\n\t\"./play.jpg\": \"./src/images/play.jpg\",\n\t\"./point.jpg\": \"./src/images/point.jpg\",\n\t\"./purple.jpg\": \"./src/images/purple.jpg\",\n\t\"./rabbit.jpg\": \"./src/images/rabbit.jpg\",\n\t\"./red.jpg\": \"./src/images/red.jpg\",\n\t\"./ride.jpg\": \"./src/images/ride.jpg\",\n\t\"./run.jpg\": \"./src/images/run.jpg\",\n\t\"./sad.jpg\": \"./src/images/sad.jpg\",\n\t\"./sad_rabbit.jpg\": \"./src/images/sad_rabbit.jpg\",\n\t\"./scared.jpg\": \"./src/images/scared.jpg\",\n\t\"./sheep.jpg\": \"./src/images/sheep.jpg\",\n\t\"./shirt.jpg\": \"./src/images/shirt.jpg\",\n\t\"./shoe.jpg\": \"./src/images/shoe.jpg\",\n\t\"./sing.jpg\": \"./src/images/sing.jpg\",\n\t\"./skip.jpg\": \"./src/images/skip.jpg\",\n\t\"./skirt.jpg\": \"./src/images/skirt.jpg\",\n\t\"./smile.jpg\": \"./src/images/smile.jpg\",\n\t\"./smile_.jpg\": \"./src/images/smile_.jpg\",\n\t\"./surprised.jpg\": \"./src/images/surprised.jpg\",\n\t\"./surprised_.jpg\": \"./src/images/surprised_.jpg\",\n\t\"./swim.jpg\": \"./src/images/swim.jpg\",\n\t\"./tired.jpg\": \"./src/images/tired.jpg\",\n\t\"./tongue.jpg\": \"./src/images/tongue.jpg\",\n\t\"./turtle.jpg\": \"./src/images/turtle.jpg\",\n\t\"./watermelon.jpg\": \"./src/images/watermelon.jpg\",\n\t\"./white.jpg\": \"./src/images/white.jpg\",\n\t\"./win.png\": \"./src/images/win.png\",\n\t\"./yellow.jpg\": \"./src/images/yellow.jpg\",\n\t\"./zoo.jpg\": \"./src/images/zoo.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/images sync recursive \\\\.(png|jpg|gif)$\";\n\n//# sourceURL=webpack://webpack-template/./src/images/_sync_\\.(png%7Cjpg%7Cgif)$?");
+eval("var map = {\n\t\"./action.jpg\": \"./src/images/action.jpg\",\n\t\"./angry.jpg\": \"./src/images/angry.jpg\",\n\t\"./angry_.jpg\": \"./src/images/angry_.jpg\",\n\t\"./apple.jpg\": \"./src/images/apple.jpg\",\n\t\"./bg_looney.jpg\": \"./src/images/bg_looney.jpg\",\n\t\"./bg_looney_blur.jpg\": \"./src/images/bg_looney_blur.jpg\",\n\t\"./bird.jpg\": \"./src/images/bird.jpg\",\n\t\"./black.jpg\": \"./src/images/black.jpg\",\n\t\"./blouse.jpg\": \"./src/images/blouse.jpg\",\n\t\"./blue.jpg\": \"./src/images/blue.jpg\",\n\t\"./body.jpg\": \"./src/images/body.jpg\",\n\t\"./boot.jpg\": \"./src/images/boot.jpg\",\n\t\"./bread.jpg\": \"./src/images/bread.jpg\",\n\t\"./cake.jpg\": \"./src/images/cake.jpg\",\n\t\"./candy.jpg\": \"./src/images/candy.jpg\",\n\t\"./cat.jpg\": \"./src/images/cat.jpg\",\n\t\"./cheek.jpg\": \"./src/images/cheek.jpg\",\n\t\"./cheese.jpg\": \"./src/images/cheese.jpg\",\n\t\"./chick.jpg\": \"./src/images/chick.jpg\",\n\t\"./chicken.jpg\": \"./src/images/chicken.jpg\",\n\t\"./clothes.jpg\": \"./src/images/clothes.jpg\",\n\t\"./coat.jpg\": \"./src/images/coat.jpg\",\n\t\"./colors.jpg\": \"./src/images/colors.jpg\",\n\t\"./cry.jpg\": \"./src/images/cry.jpg\",\n\t\"./dance.jpg\": \"./src/images/dance.jpg\",\n\t\"./dive.jpg\": \"./src/images/dive.jpg\",\n\t\"./dog.jpg\": \"./src/images/dog.jpg\",\n\t\"./dolphin.jpg\": \"./src/images/dolphin.jpg\",\n\t\"./draw.jpg\": \"./src/images/draw.jpg\",\n\t\"./dress.jpg\": \"./src/images/dress.jpg\",\n\t\"./eye.jpg\": \"./src/images/eye.jpg\",\n\t\"./favicon.png\": \"./src/images/favicon.png\",\n\t\"./fish.jpg\": \"./src/images/fish.jpg\",\n\t\"./fish2.jpg\": \"./src/images/fish2.jpg\",\n\t\"./fly.jpg\": \"./src/images/fly.jpg\",\n\t\"./food.jpg\": \"./src/images/food.jpg\",\n\t\"./foot.jpg\": \"./src/images/foot.jpg\",\n\t\"./frog.jpg\": \"./src/images/frog.jpg\",\n\t\"./giraffe.jpg\": \"./src/images/giraffe.jpg\",\n\t\"./gray.jpg\": \"./src/images/gray.jpg\",\n\t\"./green.jpg\": \"./src/images/green.jpg\",\n\t\"./hair.jpg\": \"./src/images/hair.jpg\",\n\t\"./hand.jpg\": \"./src/images/hand.jpg\",\n\t\"./happy.jpg\": \"./src/images/happy.jpg\",\n\t\"./horse.jpg\": \"./src/images/horse.jpg\",\n\t\"./hug.jpg\": \"./src/images/hug.jpg\",\n\t\"./juice.jpg\": \"./src/images/juice.jpg\",\n\t\"./jump.jpg\": \"./src/images/jump.jpg\",\n\t\"./laugh.jpg\": \"./src/images/laugh.jpg\",\n\t\"./laugh_.jpg\": \"./src/images/laugh_.jpg\",\n\t\"./lion.jpg\": \"./src/images/lion.jpg\",\n\t\"./lips.jpg\": \"./src/images/lips.jpg\",\n\t\"./lose.png\": \"./src/images/lose.png\",\n\t\"./mood.jpg\": \"./src/images/mood.jpg\",\n\t\"./mouse.jpg\": \"./src/images/mouse.jpg\",\n\t\"./nose.jpg\": \"./src/images/nose.jpg\",\n\t\"./open.jpg\": \"./src/images/open.jpg\",\n\t\"./orange.jpg\": \"./src/images/orange.jpg\",\n\t\"./pants.jpg\": \"./src/images/pants.jpg\",\n\t\"./pets.jpg\": \"./src/images/pets.jpg\",\n\t\"./pig.jpg\": \"./src/images/pig.jpg\",\n\t\"./play.jpg\": \"./src/images/play.jpg\",\n\t\"./point.jpg\": \"./src/images/point.jpg\",\n\t\"./purple.jpg\": \"./src/images/purple.jpg\",\n\t\"./rabbit.jpg\": \"./src/images/rabbit.jpg\",\n\t\"./red.jpg\": \"./src/images/red.jpg\",\n\t\"./ride.jpg\": \"./src/images/ride.jpg\",\n\t\"./run.jpg\": \"./src/images/run.jpg\",\n\t\"./sad.jpg\": \"./src/images/sad.jpg\",\n\t\"./sad_rabbit.jpg\": \"./src/images/sad_rabbit.jpg\",\n\t\"./scared.jpg\": \"./src/images/scared.jpg\",\n\t\"./sheep.jpg\": \"./src/images/sheep.jpg\",\n\t\"./shirt.jpg\": \"./src/images/shirt.jpg\",\n\t\"./shoe.jpg\": \"./src/images/shoe.jpg\",\n\t\"./sing.jpg\": \"./src/images/sing.jpg\",\n\t\"./skip.jpg\": \"./src/images/skip.jpg\",\n\t\"./skirt.jpg\": \"./src/images/skirt.jpg\",\n\t\"./smile.jpg\": \"./src/images/smile.jpg\",\n\t\"./smile_.jpg\": \"./src/images/smile_.jpg\",\n\t\"./surprised.jpg\": \"./src/images/surprised.jpg\",\n\t\"./surprised_.jpg\": \"./src/images/surprised_.jpg\",\n\t\"./swim.jpg\": \"./src/images/swim.jpg\",\n\t\"./tired.jpg\": \"./src/images/tired.jpg\",\n\t\"./tongue.jpg\": \"./src/images/tongue.jpg\",\n\t\"./turtle.jpg\": \"./src/images/turtle.jpg\",\n\t\"./watermelon.jpg\": \"./src/images/watermelon.jpg\",\n\t\"./white.jpg\": \"./src/images/white.jpg\",\n\t\"./win.png\": \"./src/images/win.png\",\n\t\"./yellow.jpg\": \"./src/images/yellow.jpg\",\n\t\"./zoo.jpg\": \"./src/images/zoo.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/images sync recursive \\\\.(png|jpg|gif)$\";\n\n//# sourceURL=webpack://webpack-template/./src/images/_sync_\\.(png%7Cjpg%7Cgif)$?");
 
 /***/ }),
 
@@ -2958,7 +2913,7 @@ eval("var map = {\n\t\"./dots.svg\": \"./src/svg/dots.svg\",\n\t\"./iconmonstr-g
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "12579dac00a0e7fd1b5e"
+/******/ 		__webpack_require__.h = () => "7e0e0aeb1ba0a3ac3c11"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

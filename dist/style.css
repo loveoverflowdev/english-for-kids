@@ -174,7 +174,6 @@ button {
 }
 
 .game-box-image img {
-  /* width: 390px; */
   height: 100%;
   border-radius: 12px 12px 0 0;
   transition: 0.8s ease-in-out transform;
@@ -366,7 +365,6 @@ footer a:hover {
 }
 
 .flip-card-back {
-  /* background: linear-gradient(45deg, #56ab2f, #a8e063); */
   background: linear-gradient(45deg, #2193b0, #6dd5ed);
   color: white;
   transform: rotateY(180deg);
@@ -402,7 +400,6 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-
 .start-btn:hover, .reset:hover {
   background-color: #d45;
 }
@@ -424,16 +421,6 @@ footer a:hover {
   user-select: none;
 }
 
-#menuToggle a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-  color: tomato;
-}
-
 #menuToggle input {
   display: block;
   width: 40px;
@@ -442,14 +429,11 @@ footer a:hover {
   top: -7px;
   left: -5px;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -477,36 +461,21 @@ footer a:hover {
   transform-origin: 0% 100%;
 }
 
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-/*
- * But let's hide the middle one.
- */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
   position: absolute;
   width: 300px;
@@ -518,7 +487,6 @@ footer a:hover {
   backdrop-filter: blur(24px);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -543,9 +511,6 @@ footer a:hover {
   color: #fff !important;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul {
   transform: none;
   display: grid;
