@@ -1,6 +1,6 @@
 # English for kids
 
-[**English for kids**]((https://boriskrasko.github.io/efk)) - an application for learning English words for kids.
+[**English for kids**](https://boriskrasko.github.io/efk) - an application for learning English words for kids.
 
 ## Application Structure:
 1. Main page
@@ -9,7 +9,7 @@
 
 ## [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rslang/english-for-kids-translated.md)
 
-# [Deploy](https://boriskrasko.github.io/efk)
+## [Deploy](https://boriskrasko.github.io/efk)
 
 ## Stack: 
   * JavaScript(ES6)
