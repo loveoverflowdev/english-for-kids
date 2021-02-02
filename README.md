@@ -9,11 +9,11 @@
 
 ## [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rslang/english-for-kids-translated.md)
 
-## [Deploy](https://boriskrasko.github.io/efk)
+## [Deploy](https://boriskrasko.github.io/english-for-kids)
 
  ### Start Screen 
  
- ![](https://boriskrasko.github.io/efk/pages/efk.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk.png)
 
 ## Stack: 
   * JavaScript(ES6)
@@ -30,30 +30,30 @@
  
  ### Page markup
  
- ![](https://boriskrasko.github.io/efk/pages/efk-markup.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk-markup.png)
  
  ### Menu and card markup
  
- ![](https://boriskrasko.github.io/efk/pages/efk-markup-components.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk-markup-components.png)
  
  ### Adding colors
  
- ![](https://boriskrasko.github.io/efk/pages/efk-colors.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk-colors.png)
  
  ### Card markup
  
- ![](https://boriskrasko.github.io/efk/pages/efk-titles.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk-titles.png)
  
  ### Responsive layout
  
- ![](https://boriskrasko.github.io/efk/pages/efk-adaptive.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk-adaptive.png)
  
  
  ### Classroom mode markup
  
- ![](https://boriskrasko.github.io/efk/pages/efk-menu.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk-menu.png)
  
  ### Testing game
  
- ![](https://boriskrasko.github.io/efk/pages/efk-game.png)
+ ![](https://boriskrasko.github.io/english-for-kids/pages/efk-game.png)
  
