@@ -1,3 +1,7 @@
+/* eslint-disable no-loop-func */
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-undef */
 const colors = ['darkblue', 'brown', 'lightgreen', 'olive', 'green', 'pink', 'blue', 'brown'];
 const topics = ['Zoo', 'Pets', 'Mood', 'Clothes', 'Food', 'Action', 'Colors', 'Body'];
 const word = [
@@ -33,7 +37,6 @@ mobileToggle.disabled = true;
 const row = document.querySelector('.row');
 const toggleWrapper = document.querySelector('.toggleWrapper');
 let hasGameStarted;
-let isStatsOpened = false;
 const gameBoard = document.querySelector('.gameboard');
 const result = document.querySelector('.result');
 let isDifficultWords = false;
@@ -42,11 +45,15 @@ let correctAnswersCount = 0;
 let mistakesCount = 0;
 let wordViewsCount = 0;
 
+document.body.style.background = "url('images/bg_looney_blur.jpg')";
+document.body.style.backgroundRepeat = 'no-repeat';
+document.body.style.backgroundSize = 'cover';
+
 // START SCREEN
 const getStartScreen = (x) => {
   if (x === true) {
     const getCardsWithTopics = () => {
-      for (let i = 0; i < colors.length; i++) {
+      for (let i = 0; i < colors.length; i += 1) {
         const box = document.createElement('div');
         box.classList.add('box', 'border', 'shadow', colors[i]);
         row.appendChild(box);
@@ -97,7 +104,7 @@ const getMenuItems = () => {
   menuStatsItem.classList.add('item-menu');
   menuStatsItem.textContent = 'Stats';
   menu.appendChild(menuStatsItem);
-  for (let i = 0; i < topics.length; i++) {
+  for (let i = 0; i < topics.length; i += 1) {
     const menuItem = document.createElement('li');
     menuItem.textContent = topics[i];
     menuItem.style.color = `var(--${colors[i]})`;
@@ -160,7 +167,7 @@ const getMenuItems = () => {
 let isClassroom = false;
 
 // CLASSROOM
-let getClassroomScreen = (array, translation) => {
+let getClassroomScreen = (array) => {
   isClassroom = true;
   entryTitle.textContent = (!isDifficultWords) ? selectedTopic : 'Difficult Words';
   mobileToggle.disabled = false;
@@ -169,7 +176,7 @@ let getClassroomScreen = (array, translation) => {
     blackboard.classList.add('row');
 
     // CREATE FRONT CARD
-    for (let i = 0; i < array[indexOfWord].length; i++) {
+    for (let i = 0; i < array[indexOfWord].length; i += 1) {
       const flipCard = document.createElement('div');
       flipCard.classList.add('card', 'flip-card');
       blackboard.appendChild(flipCard);
@@ -221,7 +228,7 @@ let getClassroomScreen = (array, translation) => {
       flipCardBack.appendChild(flipCardBackTitle);
 
       // SOUNDING WORD
-      flipCardFrontImageContainer.addEventListener('click', (e) => {
+      flipCardFrontImageContainer.addEventListener('click', () => {
         audioFromFlipCard.play();
         audioFromFlipCard.currentTime = 0;
       });
@@ -232,7 +239,7 @@ let getClassroomScreen = (array, translation) => {
         flipCardFrontButton.style.opacity = '0';
         flipCardBack.style.visibility = 'visible';
         wordViewsCount = localStorage.getItem(`${array[indexOfWord][i]}`);
-        wordViewsCount++;
+        wordViewsCount += 1;
         localStorage.setItem(`${array[indexOfWord][i]}`, wordViewsCount);
       });
 
@@ -253,6 +260,7 @@ let getClassroomScreen = (array, translation) => {
 
 // GAME
 const getGameScreen = (arr) => {
+  let getNewWord;
   const gameBoardContainer = document.createElement('div');
   gameBoardContainer.classList.add('gameboard-container', 'center');
   gameBoard.appendChild(gameBoardContainer);
@@ -266,9 +274,9 @@ const getGameScreen = (arr) => {
 
   const array = [];
   let index = 0;
-  for (let i = 0; i < arr[indexOfWord].length; i++) {
+  for (let i = 0; i < arr[indexOfWord].length; i += 1) {
     array.push(index);
-    index++;
+    index += 1;
   } // FOR SHUFFLE
   let wordID;
   let unsolvedWordsCount = arr[indexOfWord].length - 1;
@@ -283,8 +291,8 @@ const getGameScreen = (arr) => {
   result.textContent = 'Result: ';
 
   // SHUFFLE WORDS STACK
-  function shuffle(array) {
-    array.sort(() => Math.random() - 0.5);
+  function shuffle(indexArray) {
+    indexArray.sort(() => Math.random() - 0.5);
   }
 
   // PUSH START GAME BUTTON
@@ -299,7 +307,7 @@ const getGameScreen = (arr) => {
   });
 
   // CREATE CARDS
-  for (let i = 0; i < arr[indexOfWord].length; i++) {
+  for (let i = 0; i < arr[indexOfWord].length; i += 1) {
     const gameCard = document.createElement('div');
     gameCard.classList.add('card', 'border', 'shadow', colors[i]);
     gameBoardContainer.appendChild(gameCard);
@@ -331,7 +339,7 @@ const getGameScreen = (arr) => {
       } else {
         if (i === wordID) {
           isSolved = true;
-          unsolvedWordsCount--;
+          unsolvedWordsCount -= 1;
           gameCard.style.filter = 'blur(10px)';
           gameCard.style.opacity = '0.5';
           gameCard.classList.add('disabled');
@@ -340,13 +348,13 @@ const getGameScreen = (arr) => {
           result.appendChild(starGreen);
           if ('localStorage' in window && window.localStorage !== null) {
             correctAnswersCount = localStorage.getItem(`correct-${arr[indexOfWord][i]}`);
-            correctAnswersCount++;
+            correctAnswersCount += 1;
             localStorage.setItem(`correct-${arr[indexOfWord][i]}`, correctAnswersCount);
           }
         } else {
           isSolved = false;
           gameCard.classList.add('warning');
-          grayStarsCount++;
+          grayStarsCount += 1;
           const starGray = document.createElement('span');
           starGray.classList.add('fa', 'fa-star', 'error');
           result.appendChild(starGray);
@@ -355,13 +363,13 @@ const getGameScreen = (arr) => {
           }, 600);
           if ('localStorage' in window && window.localStorage !== null) {
             mistakesCount = localStorage.getItem(`fail-${arr[indexOfWord][wordID]}`);
-            mistakesCount++;
+            mistakesCount += 1;
             localStorage.setItem(`fail-${arr[indexOfWord][wordID]}`, mistakesCount);
           }
         }
         if (isSolved) {
           if (greenStarsCount < arr[indexOfWord].length - 1) {
-            greenStarsCount++;
+            greenStarsCount += 1;
             setTimeout(getNewWord, 200);
           } else {
             isWin = (grayStarsCount === 0);
@@ -379,7 +387,7 @@ const getGameScreen = (arr) => {
   }
 
   //  GET NEW WORD
-  let getNewWord = () => {
+  getNewWord = () => {
     const audioWordPronunciation = document.querySelectorAll('.sounding');
     if (!hasGameStarted || isSolved) {
       wordID = array[unsolvedWordsCount];
@@ -410,6 +418,32 @@ const getGameScreen = (arr) => {
   };
 };
 
+// MODE TOGGLE FUNCTION
+let changeMode = () => {
+  const mode = document.querySelector('.mode');
+  if (mobileToggle.checked) {
+    if (isDifficultWords && diffWords[0].length > 0) {
+      getGameScreen(diffWords);
+    } else {
+      getGameScreen(word);
+    }
+    gameBoard.style.display = 'flex';
+    blackboard.style.display = 'none';
+    mode.textContent = 'Game';
+    result.style.display = 'block';
+    entryTitle.style.display = 'none';
+    // getReady();
+  } else {
+    gameBoard.innerHTML = '';
+    gameBoard.style.display = 'none';
+    blackboard.style.display = 'flex';
+    mode.textContent = 'Train';
+    result.style.display = 'none';
+    entryTitle.style.display = 'block';
+  }
+};
+mobileToggle.addEventListener('change', changeMode);
+
 // STATS
 let statsBoard = document.querySelector('.statsboard');
 let difficultWords = [];
@@ -417,6 +451,9 @@ const difficultWordsTranslation = [];
 const statsTitleItems = [
   'Word', 'Translation', 'Topic', 'Trained', 'Correct', 'Fail',
 ];
+
+let showStats;
+
 const statsTable = () => {
   const table = document.createElement('table');
   table.classList.add('table', 'table_sort');
@@ -426,7 +463,7 @@ const statsTable = () => {
   table.appendChild(thead);
   const tr = document.createElement('tr');
   thead.appendChild(tr);
-  for (let i = 0; i < statsTitleItems.length; i++) {
+  for (let i = 0; i < statsTitleItems.length; i += 1) {
     const td = document.createElement('td');
     td.textContent = statsTitleItems[i];
     tr.appendChild(td);
@@ -446,12 +483,12 @@ const statsTable = () => {
     diffWordsTranslations = [];
 
     // CREATE STATS TABLE
-    for (let i = 0; i < word.length; i++) {
-      for (let j = 0; j < word[i].length; j++) {
+    for (let i = 0; i < word.length; i += 1) {
+      for (let j = 0; j < word[i].length; j += 1) {
         statsWord = word[i][j];
         statsTranslation = translation[i][j];
-        const row = `<tr><td>${statsWord}</td><td>${statsTranslation}</td><td>${topics[i]}</td><td>${localStorage.getItem(`${statsWord}`) || '0'}</td><td>${localStorage.getItem(`correct-${statsWord}`) || 0}</td><td>${localStorage.getItem(`fail-${statsWord}`) || 0}</td></tr>`;
-        tbody.insertAdjacentHTML('beforeend', row);
+        const rowOfTable = `<tr><td>${statsWord}</td><td>${statsTranslation}</td><td>${topics[i]}</td><td>${localStorage.getItem(`${statsWord}`) || '0'}</td><td>${localStorage.getItem(`correct-${statsWord}`) || 0}</td><td>${localStorage.getItem(`fail-${statsWord}`) || 0}</td></tr>`;
+        tbody.insertAdjacentHTML('beforeend', rowOfTable);
         if (localStorage.getItem(`fail-${statsWord}`) > 0) {
           difficultWords.push(statsWord);
           difficultWordsTranslation.push(statsTranslation);
@@ -499,8 +536,8 @@ const statsTable = () => {
   });
   getStats();
 };
-let showStats = () => {
-  isStatsOpened = true;
+
+showStats = () => {
   getStartScreen(false);
   result.style.display = 'none';
   entryTitle.style.display = 'block';
@@ -510,32 +547,6 @@ let showStats = () => {
   statsBoard.innerHTML = '';
   statsTable();
 };
-
-// MODE TOGGLE FUNCTION
-let changeMode = () => {
-  const mode = document.querySelector('.mode');
-  if (mobileToggle.checked) {
-    if (isDifficultWords && diffWords[0].length > 0) {
-      getGameScreen(diffWords);
-    } else {
-      getGameScreen(word);
-    }
-    gameBoard.style.display = 'flex';
-    blackboard.style.display = 'none';
-    mode.textContent = 'Game';
-    result.style.display = 'block';
-    entryTitle.style.display = 'none';
-    // getReady();
-  } else {
-    gameBoard.innerHTML = '';
-    gameBoard.style.display = 'none';
-    blackboard.style.display = 'flex';
-    mode.textContent = 'Train';
-    result.style.display = 'none';
-    entryTitle.style.display = 'block';
-  }
-};
-mobileToggle.addEventListener('change', changeMode);
 
 getMenuItems();
 getStartScreen(true);
