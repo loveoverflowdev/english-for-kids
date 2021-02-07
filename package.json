@@ -4,6 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack serve"
@@ -16,8 +18,11 @@
     "css-loader": "^5.0.1",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "favicons-webpack-plugin": "^4.2.0",
@@ -27,6 +32,7 @@
     "node-sass": "^5.0.0",
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.8.0",

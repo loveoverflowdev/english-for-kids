@@ -1,24 +1,24 @@
 const colors = ['darkblue', 'brown', 'lightgreen', 'olive', 'green', 'pink', 'blue', 'brown'];
 const topics = ['Zoo', 'Pets', 'Mood', 'Clothes', 'Food', 'Action', 'Colors', 'Body'];
 const word = [
-	['bird', 'fish', 'frog', 'giraffe', 'lion', 'mouse', 'turtle', 'dolphin'],
-	['cat', 'chick', 'chicken', 'dog', 'horse', 'pig', 'rabbit', 'sheep'],
-	['sad', 'angry', 'happy', 'tired', 'surprised', 'scared', 'smile', 'laugh'],
-	['skirt', 'pants', 'blouse', 'dress', 'boot', 'shirt', 'coat', 'shoe'],
-	['orange','bread', 'cheese', 'watermelon', 'cake', 'juice', 'apple', 'candy'],
-	['open', 'play', 'point', 'ride', 'run', 'sing', 'skip', 'swim'],
-	['red', 'white', 'green', 'yellow', 'black', 'purple', 'blue', 'gray'],
-	['nose', 'lips', 'hair', 'cheek', 'tongue', 'eye', 'hand', 'foot']
+  ['bird', 'fish', 'frog', 'giraffe', 'lion', 'mouse', 'turtle', 'dolphin'],
+  ['cat', 'chick', 'chicken', 'dog', 'horse', 'pig', 'rabbit', 'sheep'],
+  ['sad', 'angry', 'happy', 'tired', 'surprised', 'scared', 'smile', 'laugh'],
+  ['skirt', 'pants', 'blouse', 'dress', 'boot', 'shirt', 'coat', 'shoe'],
+  ['orange', 'bread', 'cheese', 'watermelon', 'cake', 'juice', 'apple', 'candy'],
+  ['open', 'play', 'point', 'ride', 'run', 'sing', 'skip', 'swim'],
+  ['red', 'white', 'green', 'yellow', 'black', 'purple', 'blue', 'gray'],
+  ['nose', 'lips', 'hair', 'cheek', 'tongue', 'eye', 'hand', 'foot'],
 ];
 const translation = [
-	['птичка', 'рыбка', 'жабка', 'жирафик', 'лев', 'мышка', 'черепашка', 'дeльфин'],
-	['котик', 'цыпленок', 'курочка', 'собачка', 'лошадка', 'свинья', 'кролик', 'овечка'],
-	['грустный', 'сердитый', 'сердитый', 'уставший', 'удивлённый', 'испуганный', 'улыбка', 'смех'],
-	['юбка', 'брюки', 'блузка', 'платье', 'ботинок', 'рубашка', 'пальто', 'туфли'],
-	['хлеб', 'апельсин', 'сыр', 'арбуз', 'торт', 'сок', 'яблоко', 'конфета'],
-	['открывать', 'играть', 'указывать', 'ездить', 'бегать', 'петь', 'прыгать', 'плавать'],
-	['красный', 'белый', 'зеленый', 'желтый', 'черный', 'фиолетовый', 'голубой', 'серый'],
-	['нос', 'губы', 'волосы', 'щека', 'язык', 'глаз', 'рука', 'нога']
+  ['птичка', 'рыбка', 'жабка', 'жирафик', 'лев', 'мышка', 'черепашка', 'дeльфин'],
+  ['котик', 'цыпленок', 'курочка', 'собачка', 'лошадка', 'свинья', 'кролик', 'овечка'],
+  ['грустный', 'сердитый', 'сердитый', 'уставший', 'удивлённый', 'испуганный', 'улыбка', 'смех'],
+  ['юбка', 'брюки', 'блузка', 'платье', 'ботинок', 'рубашка', 'пальто', 'туфли'],
+  ['хлеб', 'апельсин', 'сыр', 'арбуз', 'торт', 'сок', 'яблоко', 'конфета'],
+  ['открывать', 'играть', 'указывать', 'ездить', 'бегать', 'петь', 'прыгать', 'плавать'],
+  ['красный', 'белый', 'зеленый', 'желтый', 'черный', 'фиолетовый', 'голубой', 'серый'],
+  ['нос', 'губы', 'волосы', 'щека', 'язык', 'глаз', 'рука', 'нога'],
 ];
 
 let diffWords = [];
@@ -36,16 +36,16 @@ let hasGameStarted;
 let isStatsOpened = false;
 const gameBoard = document.querySelector('.gameboard');
 const result = document.querySelector('.result');
-let isDifficultWords = false
+let isDifficultWords = false;
 
 let correctAnswersCount = 0;
 let mistakesCount = 0;
 let wordViewsCount = 0;
 
 // START SCREEN
-let getStartScreen = (x) => {
+const getStartScreen = (x) => {
   if (x === true) {
-    let getCardsWithTopics =  () => {
+    const getCardsWithTopics = () => {
       for (let i = 0; i < colors.length; i++) {
         const box = document.createElement('div');
         box.classList.add('box', 'border', 'shadow', colors[i]);
@@ -71,22 +71,22 @@ let getStartScreen = (x) => {
 
         // IF PUSH TOGGLE BUTTON
         toggleWrapper.addEventListener('click', () => {
-        box.classList.add('warning');
-        setTimeout(() => {
-          box.classList.remove('warning');
-        }, 600)
+          box.classList.add('warning');
+          setTimeout(() => {
+            box.classList.remove('warning');
+          }, 600);
         });
       }
-    }
+    };
     getCardsWithTopics();
   } else {
     row.innerHTML = '';
     row.style.display = 'none';
   }
-}
+};
 
 // BURGER MENU
-let getMenuItems = () => {
+const getMenuItems = () => {
   const menu = document.getElementById('menu');
   const menuCheckbox = document.querySelector('.checkbox');
   const menuToggle = document.querySelector('.menuToggle');
@@ -104,10 +104,10 @@ let getMenuItems = () => {
     menu.appendChild(menuItem);
     menuItem.addEventListener('mouseover', () => {
       menuItem.style.background = `var(--${colors[i]})`;
-    })
+    });
     menuItem.addEventListener('mouseout', () => {
       menuItem.style.background = 'transparent';
-    })
+    });
 
     // CLICK ITEM
     menuItem.addEventListener('click', () => {
@@ -123,7 +123,7 @@ let getMenuItems = () => {
       isDifficultWords = false;
       changeMode();
       getClassroomScreen(word, translation);
-    })
+    });
   }
 
   // CLICK STATS
@@ -139,10 +139,10 @@ let getMenuItems = () => {
     menuCheckbox.checked = false;
     setTimeout(() => {
       location.reload();
-    }, 500)
+    }, 500);
   });
 
-  window.addEventListener('click', function (e) {
+  window.addEventListener('click', (e) => {
     if (!menuCheckbox.contains(e.target) && !menu.contains(e.target)) {
       menu.style.position = 'fixed';
       menuCheckbox.checked = false;
@@ -150,12 +150,12 @@ let getMenuItems = () => {
     menuToggle.style.position = (menuCheckbox.checked) ? 'fixed' : 'relative';
   });
   menuCheckbox.addEventListener('mouseover', () => {
-    menuToggle.classList.add('menuToggle_hover')
-  })
+    menuToggle.classList.add('menuToggle_hover');
+  });
   menuCheckbox.addEventListener('mouseout', () => {
-    menuToggle.classList.remove('menuToggle_hover')
-  })
-}
+    menuToggle.classList.remove('menuToggle_hover');
+  });
+};
 
 let isClassroom = false;
 
@@ -165,13 +165,13 @@ let getClassroomScreen = (array, translation) => {
   entryTitle.textContent = (!isDifficultWords) ? selectedTopic : 'Difficult Words';
   mobileToggle.disabled = false;
   getStartScreen(false);
-  let getCardsWithWords = () => {
+  const getCardsWithWords = () => {
     blackboard.classList.add('row');
 
     // CREATE FRONT CARD
     for (let i = 0; i < array[indexOfWord].length; i++) {
       const flipCard = document.createElement('div');
-      flipCard .classList.add('card', 'flip-card');
+      flipCard.classList.add('card', 'flip-card');
       blackboard.appendChild(flipCard);
       const flipCardInner = document.createElement('div');
       flipCardInner.classList.add('flip-card-inner');
@@ -202,7 +202,7 @@ let getClassroomScreen = (array, translation) => {
       // CREATE SOUND
       const audioFromFlipCard = document.createElement('audio');
       audioFromFlipCard.src = `audio/${array[indexOfWord][i]}.mp3`;
-      audioFromFlipCard .classList.add('sound');
+      audioFromFlipCard.classList.add('sound');
       flipCardInner.appendChild(audioFromFlipCard);
 
       // CREATE BACK CARD
@@ -221,23 +221,23 @@ let getClassroomScreen = (array, translation) => {
       flipCardBack.appendChild(flipCardBackTitle);
 
       // SOUNDING WORD
-      flipCardFrontImageContainer.addEventListener('click', function (e) {
+      flipCardFrontImageContainer.addEventListener('click', (e) => {
         audioFromFlipCard.play();
         audioFromFlipCard.currentTime = 0;
-        });
+      });
 
-       // FLIP IN CARD
-      flipCardFrontButton.addEventListener('click', function () {
+      // FLIP IN CARD
+      flipCardFrontButton.addEventListener('click', () => {
         flipCard.classList.add('flip-card-rotate');
         flipCardFrontButton.style.opacity = '0';
         flipCardBack.style.visibility = 'visible';
         wordViewsCount = localStorage.getItem(`${array[indexOfWord][i]}`);
         wordViewsCount++;
-        localStorage.setItem(`${array[indexOfWord][i]}`, wordViewsCount );
+        localStorage.setItem(`${array[indexOfWord][i]}`, wordViewsCount);
       });
 
       // FLIP OUT CARD
-      window.addEventListener('mouseover', function (e) {
+      window.addEventListener('mouseover', (e) => {
         if (!flipCard.contains(e.target)) {
           setTimeout(() => {
             flipCard.classList.remove('flip-card-rotate');
@@ -246,13 +246,13 @@ let getClassroomScreen = (array, translation) => {
         }
       });
     }
-  }
+  };
   statsBoard.innerHTML = '';
   getCardsWithWords();
-}
+};
 
 // GAME
-let getGameScreen = (arr) => {
+const getGameScreen = (arr) => {
   const gameBoardContainer = document.createElement('div');
   gameBoardContainer.classList.add('gameboard-container', 'center');
   gameBoard.appendChild(gameBoardContainer);
@@ -264,7 +264,7 @@ let getGameScreen = (arr) => {
   gameButton.textContent = 'Start';
   gameButtonContainer.appendChild(gameButton);
 
-  let array = [];
+  const array = [];
   let index = 0;
   for (let i = 0; i < arr[indexOfWord].length; i++) {
     array.push(index);
@@ -320,14 +320,14 @@ let getGameScreen = (arr) => {
     gameCard.addEventListener('click', () => {
       if (!hasGameStarted) {
         gameCard.classList.add('warning');
-      setTimeout(() => {
-        gameCard.classList.remove('warning');
-        window.scrollTo(0,document.body.scrollHeight);
-        gameButton.classList.add('warning');
-      }, 600)
-      setTimeout(() => {
-        gameButton.classList.remove('warning');
-      }, 1200)
+        setTimeout(() => {
+          gameCard.classList.remove('warning');
+          window.scrollTo(0, document.body.scrollHeight);
+          gameButton.classList.add('warning');
+        }, 600);
+        setTimeout(() => {
+          gameButton.classList.remove('warning');
+        }, 1200);
       } else {
         if (i === wordID) {
           isSolved = true;
@@ -364,60 +364,60 @@ let getGameScreen = (arr) => {
             greenStarsCount++;
             setTimeout(getNewWord, 200);
           } else {
-            isWin = (grayStarsCount === 0) ? true : false;
+            isWin = (grayStarsCount === 0);
             setTimeout(showResult, 1000);
           }
         }
 
         // CORRECT/ERROR SOUND
         const sound = document.createElement('audio');
-        sound.src = (isSolved) ? `audio/correct.mp3` : `audio/error.mp3`;
+        sound.src = (isSolved) ? 'audio/correct.mp3' : 'audio/error.mp3';
         gameBoardContainer.appendChild(sound);
         sound.play();
       }
-    })
+    });
   }
 
   //  GET NEW WORD
   let getNewWord = () => {
-    let audioWordPronunciation  = document.querySelectorAll('.sounding');
-    if(!hasGameStarted || isSolved) {
+    const audioWordPronunciation = document.querySelectorAll('.sounding');
+    if (!hasGameStarted || isSolved) {
       wordID = array[unsolvedWordsCount];
       hasGameStarted = true;
     }
     audioWordPronunciation[wordID].play();
     audioWordPronunciation[wordID].currentTime = 0;
-  }
+  };
 
   // RESULT SCREEN
   let showResult = () => {
     gameBoard.innerHTML = '';
-    document.body.style.background = (isWin) ? `url('images/bg_looney.jpg')` : `url('images/sad_rabbit.jpg') no-repeat center`;
+    document.body.style.background = (isWin) ? 'url(\'images/bg_looney.jpg\')' : 'url(\'images/sad_rabbit.jpg\') no-repeat center';
     const gameResultImage = document.createElement('img');
     gameResultImage.classList.add('result-image');
     gameResultImage.src = (isWin) ? 'images/win.png' : 'images/lose.png';
     gameBoard.appendChild(gameResultImage);
 
     const soundOfResult = document.createElement('audio');
-    soundOfResult.src = (isWin) ? `audio/win.mp3` : `audio/lose.mp3`;
+    soundOfResult.src = (isWin) ? 'audio/win.mp3' : 'audio/lose.mp3';
     gameBoardContainer.appendChild(soundOfResult);
     setTimeout(() => {
-      soundOfResult.play()
+      soundOfResult.play();
     }, 200);
     setTimeout(() => {
       location.reload();
     }, 4000);
-  }
-}
+  };
+};
 
 // STATS
 let statsBoard = document.querySelector('.statsboard');
 let difficultWords = [];
-let difficultWordsTranslation = [];
-let statsTitleItems = [
-  'Word', 'Translation', 'Topic', 'Trained', 'Correct', 'Fail'
+const difficultWordsTranslation = [];
+const statsTitleItems = [
+  'Word', 'Translation', 'Topic', 'Trained', 'Correct', 'Fail',
 ];
-let statsTable = () => {
+const statsTable = () => {
   const table = document.createElement('table');
   table.classList.add('table', 'table_sort');
   statsBoard.appendChild(table);
@@ -431,12 +431,11 @@ let statsTable = () => {
     td.textContent = statsTitleItems[i];
     tr.appendChild(td);
   }
-  let tbody = document.createElement('tbody');
+  const tbody = document.createElement('tbody');
   tbody.classList.add('stats');
   table.appendChild(tbody);
 
-  let getStats = () =>  {
-
+  const getStats = () => {
     // CLOSE GAME MODE
     mobileToggle.checked = false;
     changeMode();
@@ -461,7 +460,7 @@ let statsTable = () => {
     }
     diffWords.push(difficultWords);
     diffWordsTranslations.push(difficultWordsTranslation);
-  }
+  };
 
   const statsButtonContainer = document.createElement('div');
   statsButtonContainer.classList.add('center');
@@ -478,28 +477,28 @@ let statsTable = () => {
   statsResetButton.addEventListener('click', () => {
     localStorage.clear();
     showStats();
-  })
+  });
 
-  let showDifficultWords = () => {
+  const showDifficultWords = () => {
     isDifficultWords = true;
     if (diffWords[0].length < 1) {
-    entryTitle.textContent = 'Difficult Words';
-    let message = document.createElement('h2');
-    message.textContent = 'No difficult words';
-    statsBoard.appendChild(message);
+      entryTitle.textContent = 'Difficult Words';
+      const message = document.createElement('h2');
+      message.textContent = 'No difficult words';
+      statsBoard.appendChild(message);
     } else {
       indexOfWord = 0;
       getClassroomScreen(diffWords, diffWordsTranslations);
     }
-  }
+  };
 
   transitionToDifficultWordsButton.addEventListener('click', () => {
     table.innerHTML = '';
     statsButtonContainer.innerHTML = '';
     showDifficultWords();
-  })
+  });
   getStats();
-}
+};
 let showStats = () => {
   isStatsOpened = true;
   getStartScreen(false);
@@ -510,11 +509,11 @@ let showStats = () => {
   gameBoard.innerHTML = '';
   statsBoard.innerHTML = '';
   statsTable();
-}
+};
 
 // MODE TOGGLE FUNCTION
 let changeMode = () => {
-  let mode = document.querySelector('.mode');
+  const mode = document.querySelector('.mode');
   if (mobileToggle.checked) {
     if (isDifficultWords && diffWords[0].length > 0) {
       getGameScreen(diffWords);
@@ -522,20 +521,20 @@ let changeMode = () => {
       getGameScreen(word);
     }
     gameBoard.style.display = 'flex';
-    blackboard.style.display= 'none';
+    blackboard.style.display = 'none';
     mode.textContent = 'Game';
     result.style.display = 'block';
     entryTitle.style.display = 'none';
     // getReady();
   } else {
     gameBoard.innerHTML = '';
-    gameBoard .style.display = 'none';
-    blackboard.style.display= 'flex';
+    gameBoard.style.display = 'none';
+    blackboard.style.display = 'flex';
     mode.textContent = 'Train';
     result.style.display = 'none';
     entryTitle.style.display = 'block';
   }
-}
+};
 mobileToggle.addEventListener('change', changeMode);
 
 getMenuItems();
