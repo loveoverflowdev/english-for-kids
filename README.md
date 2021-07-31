@@ -1,6 +1,6 @@
 # English for kids
 
-[**English for kids**](https://boriskrasko.github.io/efk) - an application for learning English words for kids.
+[**English for kids**](https://boriskrasko.github.io/english-for-kids/) - an application for learning English words for kids.
 
 ## Application Structure:
 1. Main page
