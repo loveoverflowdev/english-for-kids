@@ -1,6 +1,6 @@
-# English for kids
+# Tiếng Anh cho trẻ
 
-[**English for kids**](https://boriskrasko.github.io/english-for-kids/) - an application for learning English words for kids.
+[**Tiếng Anh cho trẻ**](https://boriskrasko.github.io/english-for-kids/) - an application for learning English words for kids.
 
 ## Application Structure:
 1. Main page

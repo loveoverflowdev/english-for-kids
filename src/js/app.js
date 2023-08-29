@@ -15,14 +15,14 @@ const word = [
   ['nose', 'lips', 'hair', 'cheek', 'tongue', 'eye', 'hand', 'foot'],
 ];
 const translation = [
-  ['птичка', 'рыбка', 'жабка', 'жирафик', 'лев', 'мышка', 'черепашка', 'дeльфин'],
-  ['котик', 'цыпленок', 'курочка', 'собачка', 'лошадка', 'свинья', 'кролик', 'овечка'],
-  ['грустный', 'сердитый', 'сердитый', 'уставший', 'удивлённый', 'испуганный', 'улыбка', 'смех'],
-  ['юбка', 'брюки', 'блузка', 'платье', 'ботинок', 'рубашка', 'пальто', 'туфли'],
-  ['хлеб', 'апельсин', 'сыр', 'арбуз', 'торт', 'сок', 'яблоко', 'конфета'],
-  ['открывать', 'играть', 'указывать', 'ездить', 'бегать', 'петь', 'прыгать', 'плавать'],
-  ['красный', 'белый', 'зеленый', 'желтый', 'черный', 'фиолетовый', 'голубой', 'серый'],
-  ['нос', 'губы', 'волосы', 'щека', 'язык', 'глаз', 'рука', 'нога'],
+  ['chim', 'cá', 'ếch', 'hươu cao cổ', 'sư tử', 'chuột', 'rùa', 'cá heo'],
+  ['mèo', 'gà con', 'gà', 'chó', 'ngựa', 'lợn', 'thỏ', 'cừu'],
+  ['buồn', 'tức giận', 'vui vẻ', 'mệt mỏi', 'ngạc nhiên', 'sợ hãi', 'cười mỉm', 'cười'],
+  ['váy', 'quần', 'áo blouse', 'váy', 'giày boot', 'áo sơ mi', 'áo khoác', 'giày'],
+  ['quả cam', 'bánh mì', 'phô mai', 'dưa hấu', 'bánh ngọt', 'nước trái cây', 'quả táo', 'kẹo'],
+  ['mở', 'chơi', 'chỉ', 'điều khiển', 'chạy', 'hát', 'nhảy', 'bơi'],
+  ['đỏ', 'trắng', 'xanh lá cây', 'vàng', 'đen', 'tím', 'xanh da trời', 'xám'],
+  ['mũi', 'môi', 'tóc', 'má', 'lưỡi', 'mắt', 'tay', 'chân'],
 ];
 
 let diffWords = [];
@@ -102,7 +102,7 @@ const getMenuItems = () => {
   menu.appendChild(homeItem);
   const menuStatsItem = document.createElement('li');
   menuStatsItem.classList.add('item-menu');
-  menuStatsItem.textContent = 'Stats';
+  menuStatsItem.textContent = 'Thống kê';
   menu.appendChild(menuStatsItem);
   for (let i = 0; i < topics.length; i += 1) {
     const menuItem = document.createElement('li');
@@ -133,7 +133,7 @@ const getMenuItems = () => {
     });
   }
 
-  // CLICK STATS
+  // CLICK Thống Kê
   menuStatsItem.addEventListener('click', () => {
     showStats();
     setTimeout(() => {
@@ -269,7 +269,7 @@ const getGameScreen = (arr) => {
   gameBoard.appendChild(gameButtonContainer);
   const gameButton = document.createElement('button');
   gameButton.classList.add('game-button');
-  gameButton.textContent = 'Start';
+  gameButton.textContent = 'Bắt đầu';
   gameButtonContainer.appendChild(gameButton);
 
   const array = [];
@@ -298,7 +298,7 @@ const getGameScreen = (arr) => {
   // PUSH START GAME BUTTON
   gameButton.addEventListener('click', () => {
     if (!hasGameStarted) {
-      gameButton.textContent = 'Repeat';
+      gameButton.textContent = 'Nghe lại';
       shuffle(array);
       getNewWord();
     } else {
@@ -437,19 +437,19 @@ let changeMode = () => {
     gameBoard.innerHTML = '';
     gameBoard.style.display = 'none';
     blackboard.style.display = 'flex';
-    mode.textContent = 'Train';
+    mode.textContent = 'Học';
     result.style.display = 'none';
     entryTitle.style.display = 'block';
   }
 };
 mobileToggle.addEventListener('change', changeMode);
 
-// STATS
+// Thống Kê
 let statsBoard = document.querySelector('.statsboard');
 let difficultWords = [];
 const difficultWordsTranslation = [];
 const statsTitleItems = [
-  'Word', 'Translation', 'Topic', 'Trained', 'Correct', 'Fail',
+  'Từ', 'Dịch', 'Chủ đề', 'Đã học', 'Đúng', 'Sai',
 ];
 
 let showStats;
@@ -482,7 +482,7 @@ const statsTable = () => {
     diffWords = [];
     diffWordsTranslations = [];
 
-    // CREATE STATS TABLE
+    // CREATE Thống Kê TABLE
     for (let i = 0; i < word.length; i += 1) {
       for (let j = 0; j < word[i].length; j += 1) {
         statsWord = word[i][j];
@@ -541,7 +541,7 @@ showStats = () => {
   getStartScreen(false);
   result.style.display = 'none';
   entryTitle.style.display = 'block';
-  entryTitle.textContent = 'STATS';
+  entryTitle.textContent = 'Thống Kê';
   blackboard.innerHTML = '';
   gameBoard.innerHTML = '';
   statsBoard.innerHTML = '';
