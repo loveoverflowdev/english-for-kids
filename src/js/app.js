@@ -504,12 +504,12 @@ const statsTable = () => {
   statsBoard.appendChild(statsButtonContainer);
   const statsResetButton = document.createElement('button');
   statsResetButton.classList.add('stats-button');
-  statsResetButton.textContent = 'Reset';
+  statsResetButton.textContent = 'Đặt lại';
   statsButtonContainer.appendChild(statsResetButton);
-  const transitionToDifficultWordsButton = document.createElement('button');
-  transitionToDifficultWordsButton.classList.add('stats-button');
-  transitionToDifficultWordsButton.textContent = 'Difficult Words';
-  statsButtonContainer.appendChild(transitionToDifficultWordsButton);
+  // const transitionToDifficultWordsButton = document.createElement('button');
+  // transitionToDifficultWordsButton.classList.add('stats-button');
+  // transitionToDifficultWordsButton.textContent = 'Difficult Words';
+  // statsButtonContainer.appendChild(transitionToDifficultWordsButton);
 
   statsResetButton.addEventListener('click', () => {
     localStorage.clear();
