@@ -30,7 +30,7 @@ module.exports = {
      mode: 'development',
     devServer: {
         historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './dist'),
+        static: path.resolve(__dirname, './dist'),
         open: true,
         compress: true,
         hot: true,
