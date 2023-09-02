@@ -35,8 +35,6 @@ const translation = [
 // var translation = [];
 
 (async() => {
-  
-
   const baseUrl = 'http://localhost:3000';
   await fetch(`${baseUrl}/topics`)
     .then(response => response.json())
